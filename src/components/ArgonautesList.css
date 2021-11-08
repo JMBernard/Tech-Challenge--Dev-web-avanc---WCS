@@ -1,0 +1,12 @@
+.ArgonautesList {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 20%;
+    width: 100%;
+    margin: 3% 0;
+}
+
+.argonautesList_content{
+    height: 100%;
+}
