@@ -1,6 +1,6 @@
 import React from 'react'
 
-import 'ArgonautesList.Css'
+import './ArgonautesList.css'
 
 function ArgonautesList() {
     return (

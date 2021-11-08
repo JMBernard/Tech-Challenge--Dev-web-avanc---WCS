@@ -6,7 +6,7 @@ import ArgonautesList from "../components/ArgonautesList"
 
 import axios from 'axios';
 
-import '/MainPage.css';
+import './MainPage.css';
 
 function MainPage() {
     const [argonautes, setArgonautes] = useState([]);

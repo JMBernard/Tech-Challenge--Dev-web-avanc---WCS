@@ -1,6 +1,6 @@
 import React from 'react'
 
-import 'PostInput.css';
+import './PostInput.css';
 
 function PostInput() {
     return (

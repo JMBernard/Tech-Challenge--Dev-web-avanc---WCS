@@ -1,0 +1,25 @@
+.Header {
+    width: 100%;
+    height: 25%;
+    background-color: rgb(238, 238, 238);
+}
+
+.header_content {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Header img {
+    height: 16%;
+    width: 12%;
+}
+
+.pageTitle{
+    font-size: 2.5em;
+    margin-left: 1%;
+    font-weight: 550;
+}
