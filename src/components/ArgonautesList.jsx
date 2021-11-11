@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react';
+import Argonautes from './Argonautes';
 import axios from 'axios';
 import './ArgonautesList.css'
 
@@ -13,12 +14,12 @@ function ArgonautesList() {
 
     return (
         <div className="ArgonautesList">
-            <div className="argonautesList_content">
-                <h2 className="argonautesList_title">Membres de l'équipe</h2>
-                <div>
-                   <p className="blabla">{argonautes.name}</p>
-                </div>
+            {argonautes
+            .map ((argonaute) =>
+            <div key={argonaute.id}>
+                <Argonautes argonaute={argonaute}/>
             </div>
+            )}
         </div>
     )
 }

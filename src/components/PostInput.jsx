@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
 import axios from 'axios';
 
 import './PostInput.css';
 
 function PostInput() {
-    const { register, handleSubmit } = useForm();
+    // const { register, handleSubmit } = useForm();
     const url = "http://localhost:8000/api/agronautes"
 
     const [ agronaute, setAgronaute ] = useState({
@@ -30,9 +30,14 @@ function PostInput() {
             <div className="input_content">
                 <h2 className="input_title">Ajouter un(e) Argonaute</h2>
                 <label className="input_label">Nom de l'argonaute</label>
-                <form className="input_field">
-                    <input type="text" placeholder="Charalampos"></input>
-                    <button>Envoyer</button>
+                <form onSubmit={addAgronautes} className="input_field">
+                    <input 
+                        type="text" /*{...register("name")}*/
+                        id="name"
+                        placeholder="Charalampos"
+                        onChange ={(e) => handleInputChange(e)}
+                        value={agronaute.name}/>
+                    <input type="submit" /*onSubmit={addAgronautes}*//>
                 </form>
             </div>
         </div>

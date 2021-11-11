@@ -1,4 +1,5 @@
 import MainPage from "./pages/MainPage.jsx";
+// import MainPage2 from "./pages/MainPage2.jsx";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
