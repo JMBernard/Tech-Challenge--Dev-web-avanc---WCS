@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from 'react';
-import Argonautes from './Argonautes';
 import axios from 'axios';
 import './ArgonautesList.css'
 
