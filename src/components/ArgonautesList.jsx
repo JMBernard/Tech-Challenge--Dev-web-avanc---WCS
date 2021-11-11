@@ -14,12 +14,17 @@ function ArgonautesList() {
 
     return (
         <div className="ArgonautesList">
-            {argonautes
-            .map ((argonaute) =>
-            <div key={argonaute.id}>
-                <Argonautes argonaute={argonaute}/>
+            <div className="list_title">
+                <h2 >Membres de l'équipage</h2>
             </div>
-            )}
+            <div className="column_argonautes">
+                {argonautes
+                .map ((argonaute) =>
+                <div className="names" key={argonaute.id}>
+                    <div className="name">{argonaute.name} {argonaute.qualities}</div>
+                </div>
+                )}
+            </div>
         </div>
     )
 }
